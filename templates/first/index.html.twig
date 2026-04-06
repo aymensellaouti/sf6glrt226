@@ -9,13 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    {% for key, value in app.flashes('firstVisite') %}
-    <div class="alert alert-danger">{{ key }} : {{ value }}</div>
-    {% endfor %}
-    {% if(app.session.get('nbVisite') == 1) %}
-        <div class="alert alert-success">C'est votre première visite bienvenu</div>
-    {% else %}
-        <div class="alert alert-info">Merci pour votre fidélité, c'est votre {{ app.session.get('nbVisite') }}</div>
-    {% endif %}
+    <h1>Bonjour {{ name }} tu appartient à la setion {{ section }}</h1>
 </body>
 </html>
