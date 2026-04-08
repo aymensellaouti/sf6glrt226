@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Session</title>
+    <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.css') }}">
+</head>
+<body>
+    {% for message in app.flashes('happy') %}
+        <div class="alert alert-danger">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {% if(app.session.get('nbVisite') == 1) %}
+    <div class="alert alert-info">
+        Bienvenu c'est votre première visite :D
+    </div>
+    {% else %}
+        <div class="alert alert-success">
+            MErci pour fidélité c'est votre visite numéro {{ app.session.get('nbVisite') }}
+        </div>
+    {% endif %}
+</body>
+</html>
