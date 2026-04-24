@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0627a5f6-4400-4087-8d48-1217fce12023" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/first/notes.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fragments/sayhello.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FirstController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FirstController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HelloController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HelloController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hello/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hello/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +26,12 @@
     &quot;assignee&quot;: &quot;aymensellaouti&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aymensellaouti/sf6glrt226.git",
-    "accountId": "b1b02678-f1aa-4972-b833-1d52ab15d06d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aymensellaouti/sf6glrt226.git&quot;,
+    &quot;accountId&quot;: &quot;b1b02678-f1aa-4972-b833-1d52ab15d06d&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -191,7 +185,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "gl23",
+    "git-widget-placeholder": "gl21SD",
     "last_opened_file_path": "D:/symfony projects/rtgl226",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
