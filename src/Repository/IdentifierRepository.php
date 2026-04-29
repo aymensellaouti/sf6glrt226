@@ -2,39 +2,39 @@
 
 namespace App\Repository;
 
-use App\Entity\Person;
+use App\Entity\Identifier;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Person>
+ * @extends ServiceEntityRepository<Identifier>
  */
-class PersonRepository extends ServiceEntityRepository
+class IdentifierRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Person::class);
+        parent::__construct($registry, Identifier::class);
     }
 
 //    /**
-//     * @return PersonFixtures[] Returns an array of PersonFixtures objects
+//     * @return Identifier[] Returns an array of Identifier objects
 //     */
 //    public function findByExampleField($value): array
 //    {
-//        return $this->createQueryBuilder('p')
-//            ->andWhere('p.exampleField = :val')
+//        return $this->createQueryBuilder('i')
+//            ->andWhere('i.exampleField = :val')
 //            ->setParameter('val', $value)
-//            ->orderBy('p.id', 'ASC')
+//            ->orderBy('i.id', 'ASC')
 //            ->setMaxResults(10)
 //            ->getQuery()
 //            ->getResult()
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?PersonFixtures
+//    public function findOneBySomeField($value): ?Identifier
 //    {
-//        return $this->createQueryBuilder('p')
-//            ->andWhere('p.exampleField = :val')
+//        return $this->createQueryBuilder('i')
+//            ->andWhere('i.exampleField = :val')
 //            ->setParameter('val', $value)
 //            ->getQuery()
 //            ->getOneOrNullResult()

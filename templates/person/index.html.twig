@@ -3,11 +3,15 @@
 {% block title %}Liste des personnes{% endblock %}
 
 {% block body %}
+    <a href="{{ path('app_add_person', {id: 0}) }}" class="btn btn-primary">Add Person</a>
     <div class="alert alert-info">
         <ol class="list-group">
          {% for person in persons %}
             <li class="list-group-item">
             {{ person.name}} a {{ person.age}} ans
+                <a href="{{ path('app_add_person', {id: person.id}) }}" class="btn btn-success">Edit</a>
+                <a href="{{ path('delete_person', {id: person.id}) }}" class="btn btn-danger">Delete</a>
+                <a href="{{ path('details_person', {id: person.id}) }}" class="btn btn-info">Details</a>
             </li>
          {% endfor %}
         </ol>
