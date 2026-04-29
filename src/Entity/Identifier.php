@@ -3,11 +3,14 @@
 namespace App\Entity;
 
 use App\Repository\IdentifierRepository;
+use App\Trait\TimeStampTrait;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: IdentifierRepository::class)]
+#[ORM\Entity(repositoryClass: IdentifierRepository::class), ORM\HasLifecycleCallbacks()]
 class Identifier
 {
+
+    use TimeStampTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]

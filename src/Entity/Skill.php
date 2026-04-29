@@ -3,13 +3,16 @@
 namespace App\Entity;
 
 use App\Repository\SkillRepository;
+use App\Trait\TimeStampTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: SkillRepository::class)]
+#[ORM\Entity(repositoryClass: SkillRepository::class), ORM\HasLifecycleCallbacks()]
 class Skill
 {
+
+    use TimeStampTrait;
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
