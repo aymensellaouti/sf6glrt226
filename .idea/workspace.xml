@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0627a5f6-4400-4087-8d48-1217fce12023" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/person/add.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PersonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PersonFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PersonRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PersonRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/person/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/person/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FirstController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FirstController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +195,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "sfD2274gl21",
+    "git-widget-placeholder": "glrtTest",
     "last_opened_file_path": "D:/symfony projects/rtgl226",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

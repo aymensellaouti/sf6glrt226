@@ -14,6 +14,11 @@ final class FirstController extends AbstractController
     {
         return $this->render('base.html.twig');
     }
+    #[Route("/admin", name: 'app_home_admin')]
+    public function admin ()
+    {
+        return $this->render('base.html.twig');
+    }
     #[Route('/first', name: 'app_first')]
     public function index(): Response
     {
