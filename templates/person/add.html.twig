@@ -2,7 +2,16 @@
 
 {% block body %}
 {#  bech n'affichi el form  #}
-    {{ form(form) }}
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col">
+            {{ form_row(form.name) }}
+        </div>
+        <div class="col">
+            {{ form_row(form.age) }}
+        </div>
+        {{ form_rest(form) }}
+    </div>
 {% endblock %}
 
 {% block title %}

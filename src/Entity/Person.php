@@ -9,6 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: PersonRepository::class), ORM\HasLifecycleCallbacks()]
 class Person
@@ -19,10 +20,14 @@ class Person
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 70)]
+    #[
+        ORM\Column(length: 70),
+        Assert\NotBlank(message: 'Le champ name est obligatoire'),
+        Assert\Length(min: 3, minMessage: 'Le name doit avoir au moins 3 caractères', max: 25, maxMessage: 'Le name doit avoir au maximum 25 caractère')
+    ]
     private ?string $name = null;
 
-    #[ORM\Column(type: Types::INTEGER)]
+    #[ORM\Column(type: Types::INTEGER), Assert\LessThan(60, message: 'vous devez avoir un age inférieur à 60'), Assert\Positive(message: "l'Age doit etre positif")]
     private ?int $age = null;
 
     /**

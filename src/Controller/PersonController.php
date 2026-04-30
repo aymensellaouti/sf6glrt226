@@ -41,6 +41,7 @@ final class PersonController extends AbstractController
             $successMessage = "La personne a été ajouté avec succès";
         }
         $form = $this->createForm(PersonType::class, $person);
+//        $form->remove('age');
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $this->manager->persist($person);

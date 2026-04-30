@@ -22,10 +22,13 @@ class PersonType extends AbstractType
                 'class' => Skill::class,
                 'choice_label' => 'designation',
                 'multiple' => true,
+                'expanded' => false
             ])
             ->add('identifier', EntityType::class, [
                 'class' => Identifier::class,
-                'choice_label' => 'name',
+                'choice_label' => function (Identifier $identifier) {
+                    return $identifier->getName()." ".$identifier->getValue();
+                },
             ])
             ->add('save', SubmitType::class)
         ;
