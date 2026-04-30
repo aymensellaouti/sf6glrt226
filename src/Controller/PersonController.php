@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 final class PersonController extends AbstractController
 {
@@ -43,6 +44,7 @@ final class PersonController extends AbstractController
         $form = $this->createForm(PersonType::class, $person);
 //        $form->remove('age');
         $form->handleRequest($request);
+        $user = $this->getUser();
         if ($form->isSubmitted() && $form->isValid()) {
             $this->manager->persist($person);
             $this->manager->flush();
@@ -56,7 +58,10 @@ final class PersonController extends AbstractController
         ]);
     }
 
-    #[Route('/person/delete/{id}', name: 'delete_person')]
+    #[
+        Route('/person/delete/{id}', name: 'delete_person'),
+        IsGranted('ROLE_ADMIN')
+    ]
     public function deletePerson(Person $person = null): Response
     {
         //$person = $this->personRepository->find($id);

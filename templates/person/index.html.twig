@@ -14,7 +14,9 @@
                     </div>
                     <div class="col">
                         <a href="{{ path('app_add_person', {id: person.id}) }}" class="btn btn-success">Edit</a>
+                        {% if is_granted('ROLE_ADMIN') %}
                         <a href="{{ path('delete_person', {id: person.id}) }}" class="btn btn-danger">Delete</a>
+                        {% endif %}
                         <a href="{{ path('details_person', {id: person.id}) }}" class="btn btn-info">Details</a>
                     </div>
                 </div>
